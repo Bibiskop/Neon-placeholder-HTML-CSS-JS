@@ -1,19 +1,19 @@
 
 *
 {
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-	text-align: center;
+  width: 2560px;
+  max-width: 90%;
   background-color: black;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0;
   gap: 30px;
+  overflow-x: hidden;
 }
 
 .inputBox
@@ -22,103 +22,85 @@ body {
 }
 
 .inputBox input
-
 {
-    padding: 10px;
-    background: black;
-    border-radius: 5px;
-    outline: none;
-    font-size: 1em;
+    padding: 10px; 
 }
 
 .inputBox .lox
-
 {
+    left: 762px;
+    top: 60px;
+    width: 100%;
     position: absolute;
-    left: 490px;
     padding: 10px;
     pointer-events: none;
-    font-size: 75px;
+    font-size: 5vh;
     text-transform: uppercase;
     transition: 0.5s;
-    -webkit-animation: zagolovok 0.4s linear infinite;
-    animation: zagolovok 0.4s linear infinite;
 }
 .inputBox input:valid ~ .lox,
 .inputBox input:focus ~ .lox
 {
-  transform: translateX(10px) translateY(-7px);
-  font-size: 20px;
+  width: auto;
+  transform: translateX(70px) translateY(-80px);
+  font-size: 3vh;
   padding: 0 10px;
   background: black;
-  letter-spacing: 0.2em;
-  -webkit-animation: input 0.3s linear infinite;
-  animation: input 0.3s linear infinite;
+  letter-spacing: 0.2em;;
+  animation: input 0.7s linear infinite;
 }
 
 #wrapper{
     position: relative;
+    width: 100%;
 }
-#wrapper input{
-  border-radius: 50px;
-  background-color: black;
-  outline: none;
-}
+
 #list {
-	padding: 0;
+	padding:0;
 	list-style-type: none;
-  font-size: 100px;
-  -webkit-animation: zagolovok 0.4s linear infinite;
-  animation: zagolovok 0.4s linear infinite;
+  font-size: 4vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #input{
-  -webkit-animation: input 0.3s linear infinite;
-  animation: input 0.3s linear infinite;
-  height: 100px;
+  border-radius: 50px;
+  background-color: black;
+  outline: none;
+  width: 50%;
+  margin-left: 515px;
+  margin-top: 20px;
+  height: auto;
   text-align: center;
-  font-size: 75px;
+  font-size: 8vh;
+  animation: input 0.7s linear infinite;
 }
 
-@-webkit-keyframes input {
-    0% { border: rgb(255, 251, 0) solid 3px; }
-    50% { border: rgb(115, 255, 0);border-radius: 50px; text-shadow: 0 -1px rgb(0, 0, 0), 0 0 5px rgb(212, 0, 255), 0 0 8px rgb(212, 0, 255); }
-    100% { border: rgb(0, 0, 0); }
-  }
-  @keyframes input {
-    0% { border: rgb(255, 251, 0) solid 3px;border-radius: 50px; }
+ @keyframes input {
+    0% { border: rgb(255, 251, 0) solid 1px;border-radius: 50px; }
     50% { border: rgb(115, 255, 0); border-radius: 50px; text-shadow: 0 -1px rgb(0, 0, 0), 0 0 5px rgb(212, 0, 255), 0 0 8px rgb(212, 0, 255); }
     100% { border: rgba(0, 0, 0, 0);border-radius: 50px; }
-  }
-
-#list span {
-	margin-right: 50px;
 }
 #list .remove, #list .mark {
 	cursor: pointer;
-    -webkit-animation: zagolovok 0.4s linear infinite;
-    animation: zagolovok 0.4s linear infinite;
-}
-#list .remove:hover, #list .mark:hover {
-	text-decoration: underline;
 }
 
 #list .done .task {
 	text-decoration: line-through;
 }
 
+.zagolovok, #list .remove, #list .mark,#list,.inputBox .lox{
+  animation: zagolovok 0.7s linear infinite;
+}
+
 .zagolovok {
-    -webkit-animation: zagolovok 0.4s linear infinite;
-    animation: zagolovok 0.4s linear infinite;
-    margin: 0;
-    font-size: 200px;
-    padding-top: 200px;
-  }
-  @-webkit-keyframes zagolovok {
-    0% { color: rgb(255, 251, 0); }
-    50% { color: rgb(115, 255, 0); text-shadow: 0 -1px rgb(0, 0, 0), 0 0 5px rgb(212, 0, 255), 0 0 8px rgb(212, 0, 255); }
-    100% { color: rgb(0, 0, 0); }
-  }
+  width: 100%;
+  margin: 0;
+  font-size: 13.2vh;
+  text-align: center;
+}
+
   @keyframes zagolovok {
     0% { color: rgb(255, 251, 0); }
     50% { color: rgb(115, 255, 0); text-shadow: 0 -1px rgb(0, 0, 0), 0 0 5px rgb(212, 0, 255), 0 0 8px rgb(212, 0, 255); }
@@ -127,5 +109,9 @@ body {
 
 button{
   background-color: black;
-  font-size: 75px;
+  font-size: 3vh;
+  text-transform: uppercase;
+  padding: 50px;
+  border: none;
+  outline: none;
 }
