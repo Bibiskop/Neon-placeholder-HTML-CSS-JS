@@ -28,7 +28,7 @@ input.addEventListener('keypress', function(event) {
 		li.appendChild(task);
 		
 		let remove = document.createElement('button');
-		remove.textContent = 'удалить';
+		remove.textContent = 'remove';
 		remove.classList.add('remove');
 		remove.addEventListener('click', function() {
 			this.parentElement.remove();
@@ -36,7 +36,7 @@ input.addEventListener('keypress', function(event) {
 		li.appendChild(remove);
 		
 		let mark = document.createElement('button');
-		mark.textContent = 'сделано';
+		mark.textContent = 'mark';
 		mark.classList.add('mark');
 		mark.addEventListener('click', function() {
 			this.parentElement.classList.add('done');
