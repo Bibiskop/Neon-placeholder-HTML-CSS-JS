@@ -1,56 +1,211 @@
-@media only screen and (max-width: 320px){
-    .zagolovok{
-        font-size: 8vh;
+  @media only screen and (max-width: 2560px){
+    .zagolovok
+    {
+        font-size: 10em;
     }
-
-    .inputBox .lox{
-        left: 70px;
-        top: 5px;
-        width: 100%;
-        position: absolute;
+    .inputBox .lox
+    {
+        top: 30%;
+    }
+    #input
+    {
+        font-size: 4em;
+        width: 20em;
+    }
+    .inputBox input:valid ~ .lox,
+    .inputBox input:focus ~ .lox
+    {
+        font-size: 3.5vh;
+        letter-spacing: 0.2em;
+        transform: translateY(-20px);
+    }
+    button
+    {
+        font-size: 5vh;
         padding: 10px;
-        pointer-events: none;
+    }
+  }
+  @media only screen and (max-width: 1440px){
+    .inputBox .lox
+    {
+        top: 28%;
+    }
+    #input
+    {
+        font-size: 2em;
+        width: 20em;
+    }
+    .inputBox input:valid ~ .lox,
+    .inputBox input:focus ~ .lox
+    {
+        font-size: 3.5vh;
+        letter-spacing: 0.2em;
+        transform: translateY(-20px);
+    }
+    button
+    {
         font-size: 5vh;
-        text-transform: uppercase;
-        transition: 0.5s;
+        padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 1024px){
+    .inputBox .lox
+    {
+        top: 135px;
+    }
+    #input
+    {
+        font-size: 2em;
+        width: 15em;
+    }
+    .inputBox input:valid ~ .lox,
+    .inputBox input:focus ~ .lox
+    {
+        font-size: 3.5vh;
+        letter-spacing: 0.2em;
+        transform: translateY(-20px);
+    }
+    button
+    {
+        font-size: 5vh;
+        padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .inputBox .lox
+    {
+        top: 135px;
+    }
+    #input
+    {
+        font-size: 2em;
+        width: 15em;
+    }
+    .inputBox input:valid ~ .lox,
+    .inputBox input:focus ~ .lox
+    {
+        font-size: 3.5vh;
+        letter-spacing: 0.2em;
+        transform: translateY(-20px);
+    }
+    button
+    {
+        font-size: 5vh;
+        padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 425px){
+    .zagolovok
+    {
+        font-size: 1.9em;
     }
 
-    #input{
-        border-radius: 50px;
-        background-color: black;
-        outline: none;
-        width: 80%;
-        margin-left: 30px;
-        margin-top: 3px;
-        height: auto;
-        text-align: center;
-        font-size: 5vh;
+    .inputBox .lox
+    {
+        padding: 10px;
+        font-size: 1em;
+        top: 83px;
+    }
+
+    #input
+    {
+        font-size: 1.5em;
+        width: 10em;
+    }
+
+    .inputBox input:valid ~ .lox,
+    .inputBox input:focus ~ .lox
+    {
+        font-size: 3vh;
+        letter-spacing: 0.2em;
+        transform: translateY(-20px);
+    }
+
+    button
+    {
+        font-size: 3vh;
+        padding: 10px;
+    }
+
+    #list 
+    {
+      font-size: 4vh;
+    }
+  }
+  @media only screen and (max-width: 375px){
+    .zagolovok
+    {
+        font-size: 1.9em;
+    }
+
+    .inputBox .lox
+    {
+        padding: 10px;
+        font-size: 1em;
+        top: 83px;
+    }
+
+    #input
+    {
+        font-size: 1.5em;
+        width: 10em;
     }
 
     .inputBox input:valid ~ .lox,
     .inputBox input:focus ~ .lox{
-        width: auto;
-        transform: translateX(15px) translateY(-4px);
         font-size: 3vh;
-        padding: 0 10px;
-        background: black;
-        letter-spacing: 0.2em;;
+        letter-spacing: 0.2em;
+        transform: translateY(-20px);
     }
 
-    button{
-        background-color: black;
+    button
+    {
         font-size: 3vh;
-        text-transform: uppercase;
         padding: 10px;
-        border: none;
-        outline: none;
     }
 
-    #list {
-      list-style-type: none;
+    #list 
+    {
       font-size: 4vh;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
     }
   }
+  @media only screen and (max-width: 320px){
+    .zagolovok
+    {
+        font-size: 1.9em;
+    }
+
+    .inputBox .lox
+    {
+        padding: 10px;
+        font-size: 1em;
+        top: 83px;
+    }
+
+    #input
+    {
+        font-size: 1.5em;
+        width: 10em;
+    }
+
+    .inputBox input:valid ~ .lox,
+    .inputBox input:focus ~ .lox
+    {
+        font-size: 3vh;
+        letter-spacing: 0.2em;
+        transform: translateY(-20px);
+    }
+
+    button
+    {
+        font-size: 3vh;
+        padding: 10px;
+    }
+
+    #list 
+    {
+      font-size: 4vh;
+    }
+  }
+  
+ 
